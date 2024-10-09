@@ -2,8 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #242730;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 h1 {
@@ -20,73 +20,62 @@ h1 {
 
 .Square {
   color: currentColor;
-  font-size: 2em;
+  font-size: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 5px;
+  font-weight: bold;
+  
 }
 
-.right-border {
-  border-right: 0.2em solid #0074a6;
-}
-
-.bottom-border {
-  border-bottom: 0.2em solid #0074a6;
-}
-
-.left-border {
-  border-left: 0.2em solid #0074a6;
-}
-
-.top-border { 
-  border-top: 0.2em solid #0074a6;
+.square-design {
+  background-color: rgba(0,0,0,0.10);
+  border-radius: 10px;
 }
 
 .strike {
   position: absolute;
-  background-color: darkorange;
+  background-color: black;
+  border-radius: 5px;
+  height: 8px;
 }
 
 .strike-row-1 {
   width: 100%;
-  height: 4px;
   top: 15%;
 }
 .strike-row-2 {
-  width: 100%;
-  height: 4px;
+  width: 100%; 
   top: 48%;
 }
 .strike-row-3 {
   width: 100%;
-  height: 4px;
   top: 83%;
 }
 .strike-column-1 {
   height: 100%;
-  width: 4px;
+  width: 6px;
   left: 15%;
 }
 .strike-column-2 {
   height: 100%;
-  width: 4px;
+  width: 6px;
   left: 48%;
 }
 .strike-column-3 {
   height: 100%;
-  width: 4px;
+  width: 6px;
   left: 83%;
 }
 .strike-diagonal-1 {
   width: 90%;
-  height: 4px;
   top: 50%;
   left: 5%;
   transform: skewY(45deg);
 }
 .strike-diagonal-2 {
   width: 90%;
-  height: 4px;
   top: 50%;
   left: 5%;
   transform: skewY(-45deg);
@@ -94,18 +83,29 @@ h1 {
 
 .game-final {
   text-align: center;
-  border: #5468ff 8px;
-  border-style: dotted;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 1.5em;
+  border-radius: 10px;
+  border: 2px solid #4433ff;
+  color: #4433ff;;
 }
 
 .reset-game {
-  margin-top: 50px;
-  padding: 20px;
-  background-color: #0074a6;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #3d348b;
   color: white;
   width: 100%;
   font-size: 1.5em;
+  border-radius: 10px;
 }
+
+.Player1 { 
+  color: red;
+}
+
+.Player2 { 
+  color: blue;
+}
+
